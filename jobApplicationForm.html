@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <form action="http://gclass.alexburner.com/formtest.php" method="post" class="form-container">
+    <head>
+        <title style="font-size:60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Job Application Form
+        </title>
+        <link rel="stylesheet" type="text/css" href="jobApplication.Css" />
+    
+    </head>
+    <body>
+        <div id = "Header">
+            <h1>Job Application</h1>
+        </div>
+        <form>
+            <input type="text" name="search" placeholder="Search..">
+          </form>
+        <div id = "Account">
+            <h2>Account</h2>
+            <i class="fa fa-user icon"></i>
+            First name: <input type="text" name="firstname"><br> 
+            <i class="fa fa-user icon"></i>
+            Last name:  <input type="text" name="lastname">
+            <br>Password: <input type="password" name="pwd">
+        </div>
+        <div id = "address">
+            <h2>Address</h2>
+            Street: <input type="text" name="Street"><br>
+            City: <input type="text" name="City"><br>
+            State: <select name="states"> 
+                <option value="Select a State">Select a State</option> 
+                <option value="Washiton">Washington</option> 
+                <option value="Pensylvania">Pensylvania</option> 
+                <option value="California">California</option> 
+                <option value="Texas">Texas</option> 
+            </select>
+        </div>
+        <h2>Avaliability</h2>
+        <div id = "in-person"> Are you able to work in-person in Seattle?  <br>          
+            <input type="radio" name="in-person?" value="yes"> Yes<br> <input type="radio" name="answer" value="no"> No
+        </div>
+        <div id = "work time"> What time do you prefer to work?(check all that apply)<br>
+            <input type="checkbox" name="worktime" value="Mornings">Mornings<br> 
+            <input type="checkbox" name="worktime" value="Afternoons">Afternoons<br>
+            <input type="checkbox" name="worktime" value="Evenings">Evenings<br>
+        </div>
+        <h2>Why do you deserve this Job? (slide the slider when you finish writing)</h2>
+        <div id = "deserve?">
+            <textarea name="subject" placeholder="Write something.." style="height:200px; Width:500px"></textarea>
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        <p>By submitting a form you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+        <input id = "submit" type="submit"  value="Submit form">
+    </form> 
+    </body>
+
+</html>
